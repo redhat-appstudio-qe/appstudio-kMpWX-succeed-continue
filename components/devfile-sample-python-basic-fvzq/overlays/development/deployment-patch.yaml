@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-fvzq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-sorf-tenant/appstudio/devfile-sample-python-basic-fvzq@sha256:b8bb9442d5bf5d1a38eacb22b62025b7f51dd6b4d33bc5572250ab6558f4de0d
+        name: container-image
+        resources: {}
+status: {}
