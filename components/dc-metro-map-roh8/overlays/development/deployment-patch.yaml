@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-roh8
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-sorf-tenant/appstudio/dc-metro-map-roh8@sha256:affc919fe5d4ee7ceaf1b98695972e505923ba5d8061bd95a9fab1eed031d20e
+        name: my-nodejs
+        resources: {}
+status: {}
